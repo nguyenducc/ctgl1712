@@ -37,7 +37,7 @@ bool check(node* head) {
     set<node*> st;
     while (temp != NULL)
     {
-        if (st.find(temp) != st.end()) {
+        if (st.count(temp)!=0) {
             return true;
         }
         else {
